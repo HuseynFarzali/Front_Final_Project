@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Handjet:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Martian+Mono:wght@100;200;300;400;500;600;700;800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Serif+Vithkuqi:wght@400;500;600;700&family=Onest:wght@100;200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<style>
+    .ct-container {
+        width: 1140px;
+        margin: 0 auto;
+    }
+</style>
+
+<body class="font-['Onest']">
+
+    <!-- header start -->
+    <header class="p-[16px_48px] | flex justify-between items-center | border-slate-400 bg-[#E9ECEF]">
+        <div class="header--contact | text-[14px]">
+            <i class="fa-brands fa-facebook-f | cursor-pointer"></i>
+            <i class="fa-brands fa-twitter | pl-2 | cursor-pointer"></i>
+            <i class="fa-solid fa-phone | pl-6 text-[16px] | relative bottom-[-2px]"></i>
+            <p style="display: inline;" class="font-light | pl-2">022-2391-12-551</p>
+        </div>
+        <div class="header--heading-text">
+            <p>Free in-store delivery</p>
+        </div>
+        <div class="header--config-settings | text-[14px] flex justify-center">
+            <div class="language-dropmenu | p-[0_16px] | relative">
+                <span>English</span>
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-up" style="display: none;"></i>
+                <div
+                    class="dropdown | absolute left-[-24px] | w-[160px] m-[16px_0_0] p-[8px_0] | bg-white shadow-xl border border-slate-200 font-semibold text-[#868e96] | hidden">
+                    <div class="setting | p-[6.4px_24px]">German</div>
+                    <div class="setting | p-[6.4px_24px]">French</div>
+                </div>
+            </div>
+            <div class="exchange-dropmenu | p-[0_16px] | relative">
+                <span>USD</span>
+                <i class="fa-solid fa-chevron-down"></i>
+                <i class="fa-solid fa-chevron-up" style="display: none;"></i>
+                <div
+                    class="dropdown | absolute left-[-24px] | w-[160px] m-[16px_0_0] p-[8px_0] | bg-white shadow-xl border border-slate-200 font-semibold text-[#868e96] | hidden">
+                    <div class="setting | p-[6.4px_24px]">USD</div>
+                    <div class="setting | p-[6.4px_24px]">GBR</div>
+                </div>
+            </div>
+            <div class="exchange-dropmenu"></div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- navigation start -->
+    <nav class="flex items-center | p-[19.2px_48px] | transition-colors | shadow-md | mb-[48px]">
+        <!-- Nav Main Panel start -->
+        <div class="nav--main-panel">
+            <div class="panel | inline-block | mr-4 py-2 | font-semibold">
+                Varkala
+            </div>
+            <a href="index.html" class="panel | inline-block | p-2 | font-semibold | relative | hover:font-semibold | cursor-pointer">
+                Home
+                <i class="fa-solid fa-chevron-down | text-[10px]"></i>
+                <i class="fa-solid fa-chevron-up | text-[10px] | hidden"></i>
+                <div
+                    class="dropdown | absolute left-[0px] | w-[200px] m-[16px_0_0] p-[8px_0] | bg-white shadow-xl border border-slate-200 font-semibold text-[#868e96] | hidden">
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Home-1 Fashion</div>
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Home-2 Fashion</div>
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Home-3 Design</div>
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Home-4 Design</div>
+                </div>
+            </a>
+            <a href="category.html" class="panel | inline-block | p-2 | relative | hover:font-semibold | cursor-pointer">
+                Shop
+                <i class="fa-solid fa-chevron-down | text-[10px]"></i>
+                <i class="fa-solid fa-chevron-up | text-[10px] | hidden"></i>
+                <div
+                    class="dropdown | absolute left-[0px] | w-[200px] m-[16px_0_0] p-[8px_0] | bg-white shadow-xl border border-slate-200 font-semibold text-[#868e96] | hidden">
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Shop-1 Fashion</div>
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Shop-2 Fashion</div>
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Shop-3 Design</div>
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Shop-4 Design</div>
+                </div>
+            </a>
+            <div class="panel | inline-block | p-2 | relative | hover:font-semibold">
+                Icons
+                <i class="fa-solid fa-chevron-down | text-[10px]"></i>
+                <i class="fa-solid fa-chevron-up | text-[10px] | hidden"></i>
+                <div
+                    class="dropdown | absolute left-[0px] | w-[200px] m-[16px_0_0] p-[8px_0] | bg-white shadow-xl border border-slate-200 font-semibold text-[#868e96] | hidden">
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Icons-1 Fashion</div>
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Icons-2 Fashion</div>
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Icons-3 Design</div>
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Icons-4 Design</div>
+                </div>
+            </div>
+            <a href="blog.html" class="panel | inline-block | p-2 | relative | hover:font-semibold | cursor-pointer">
+                Pages
+                <i class="fa-solid fa-chevron-down | text-[10px]"></i>
+                <i class="fa-solid fa-chevron-up | text-[10px] | hidden"></i>
+                <div
+                    class="dropdown | absolute left-[0px] | w-[200px] m-[16px_0_0] p-[8px_0] | bg-white shadow-xl border border-slate-200 font-semibold text-[#868e96] | hidden">
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Pages-1 Fashion</div>
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Pages-2 Fashion</div>
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Pages-3 Design</div>
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Pages-4 Design</div>
+                </div>
+            </a>
+            <div class="panel | inline-block | p-2 | relative | hover:font-semibold">
+                Docs
+                <i class="fa-solid fa-chevron-down | text-[10px]"></i>
+                <i class="fa-solid fa-chevron-up | text-[10px]" style="display: none;"></i>
+                <div
+                    class="dropdown | absolute left-[0px] | w-[200px] m-[16px_0_0] p-[8px_0] | bg-white shadow-xl border border-slate-200 font-semibold text-[#868e96] | hidden">
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Docs-1 Fashion</div>
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Docs-2 Fashion</div>
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Docs-3 Design</div>
+                    <div class="setting | p-[6.4px_24px] | text-[14px]">Docs-4 Design</div>
+                </div>
+            </div>
+        </div>
+        <!-- Navigation Main Panel end -->
+
+        <!-- Navigation Search Panel start -->
+        <div class="nav--search-panel | border-b border-b-slate-400 hover:border-b-black duration-200 | mr-[6em] ml-auto">
+            <div class="content-container | w-full">
+                <input class="outline-none | p-[6px_12px_6px_16px]" type="text" name="search-input" placeholder="Search" />
+            <button>
+                <i class="fa-solid fa-magnifying-glass fa-md | px-[12px]"></i>
+            </button>
+            </div>
+        </div>
+        <!-- Navigation Search Panel end -->
+
+        <!-- Navigation Customize Panel start -->
+        <div class="nav--customize-panel | flex items-center gap-[24px] | ml-[100px]">
+            <div class="setting">
+                <i class="fa-solid fa-person fa-xl text-slate-700 hover:text-[#bcac76] duration-200"></i>
+            </div>
+            <div class="setting">
+                <i class="fa-regular fa-heart fa-xl text-slate-700 hover:text-[#bcac76] duration-200"></i>
+            </div>
+            <div class="setting">
+                <i class="fa-solid fa-basket-shopping fa-xl text-slate-700 hover:text-[#bcac76] duration-200"></i>
+            </div>
+            <div class="setting">
+                <i class="fa-solid fa-bars fa-xl text-slate-700 hover:text-[#bcac76] duration-200"></i>
+            </div>
+        </div>
+        <!-- Navigation Customize Panel end -->
+    </nav>
+    <!-- navigation end -->
+
+    <!-- Main start // data-aos="zoom-in-up" -->
+    <main>
+
+        <section>
+            <div class="content-container ct-container">
+                <div class="header-poster | py-[160px] mt-[48px]| bg-[url('https://i.mdel.net/i/db/thumbs/mdx/1000x/2023/09/Screenshot-2023-09-29-at-5.59.35-PM.png')] bg-cover bg-top">
+                    <h1 class="text-white text-center text-[96px] font-semibold tracking-tight shadow-2xl">Blog</h1>
+                </div>
+    
+                <div class="masonry-grid-section | py-[48px] | grid grid-cols-3 grid-rows-6 gap-y-[12px] gap-x-[48px] h-[1200px]">
+                    <div data-aos="zoom-in-up" class="element | col-start-1 col-end-2 row-start-1 row-end-3">
+                        <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/christopher-campbell-28571-unsplash.jpg"
+                            class="object-contain w-[306x] mb-[20px]" />
+                        <h1 class="text-[20px] mb-[8px] font-bold tracking-tight my-auto">Pellentesque habitant morbi</h1>
+                        <p class="text-[#adb5bd] mb-[16px] font-semibold text-[11.2px]">
+                            <strong class="uppercase text-[#bcac76] text-[14px] tracking-[2px] mr-[8px]">fashion and style</strong>January 16, 2019
+                        </p>
+                    </div>
+                    <div data-aos="zoom-in-up" class="element | col-start-2 col-end-3 row-start-1 row-end-4">
+                        <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/kyle-loftus-596319-unsplash-cropped-2.jpg"
+                            class="object-contain w-[306x] mb-[20px]" />
+                        <h1 class="text-[20px] mb-[8px] font-bold tracking-tight">Pellentesque habitant morbi</h1>
+                        <p class="text-[#adb5bd] mb-[16px] font-semibold text-[11.2px]">
+                            <strong class="uppercase text-[#bcac76] text-[14px] tracking-[2px] mr-[8px]">fashion and style</strong>January 16, 2019
+                        </p>
+                    </div>
+                    <div data-aos="zoom-in-up" class="element | col-start-3 col-end-4 row-start-1 row-end-3">
+                        <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347962-unsplash.jpg"
+                            class="object-contain w-[306x] mb-[20px]" />
+                        <h1 class="text-[20px] mb-[8px] font-bold tracking-tight">Pellentesque habitant morbi</h1>
+                        <p class="text-[#adb5bd] mb-[16px] font-semibold text-[11.2px]">
+                            <strong class="uppercase text-[#bcac76] text-[14px] tracking-[2px] mr-[8px]">fashion and style</strong>January 16, 2019
+                        </p>
+                    </div>
+                    <div data-aos="zoom-in-up" class="element | col-start-1 col-end-2 row-start-3 row-end-5">
+                        <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/photo-1534126511673-b6899657816a.jpg"
+                            class="object-contain w-[306x] mb-[20px]" />
+                        <h1 class="text-[20px] mb-[8px] font-bold tracking-tight">Pellentesque habitant morbi</h1>
+                        <p class="text-[#adb5bd] mb-[16px] font-semibold text-[11.2px]">
+                            <strong class="uppercase text-[#bcac76] text-[14px] tracking-[2px] mr-[8px]">fashion and style</strong>January 16, 2019
+                        </p>
+                    </div>
+                    <div data-aos="zoom-in-up" class="element | col-start-2 col-end-3 row-start-4 row-end-6">
+                        <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/rahul-anil-214671-unsplash.jpg"
+                            class="object-contain w-[306x] mb-[20px]" />
+                        <h1 class="text-[20px] mb-[8px] font-bold tracking-tight">Pellentesque habitant morbi</h1>
+                        <p class="text-[#adb5bd] mb-[16px] font-semibold text-[11.2px]">
+                            <strong class="uppercase text-[#bcac76] text-[14px] tracking-[2px] mr-[8px]">fashion and style</strong>January 16, 2019
+                        </p>
+                    </div>
+                    <div data-aos="zoom-in-up" class="element | col-start-3 col-end-4 row-start-3 row-end-6">
+                        <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/averie-woodard-319832-unsplash-cropped.jpg"
+                            class="object-contain w-[306x] mb-[20px]" />
+                        <h1 class="text-[20px] mb-[8px] font-bold tracking-tight">Pellentesque habitant morbi</h1>
+                        <p class="text-[#adb5bd] mb-[16px] font-semibold text-[11.2px]">
+                            <strong class="uppercase text-[#bcac76] text-[14px] tracking-[2px] mr-[8px]">fashion and style</strong>January 16, 2019
+                        </p>
+                    </div>
+                    <div data-aos="zoom-in-up" class="element | col-start-1 col-end-2 row-start-5 row-end-7">
+                        <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347942-unsplash.jpg"
+                            class="object-contain w-[306x] mb-[20px]" />
+                        <h1 class="text-[20px] mb-[8px] font-bold tracking-tight">Pellentesque habitant morbi</h1>
+                        <p class="text-[#adb5bd] mb-[16px] font-semibold text-[11.2px]">
+                            <strong class="uppercase text-[#bcac76] text-[14px] tracking-[2px] mr-[8px]">fashion and style</strong>January 16, 2019
+                        </p>
+                    </div>
+                    <div data-aos="zoom-in-up" class="element | col-start-2 col-end-3 row-start-6 row-end-8 | h-[266px]">
+                        <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/christopher-campbell-28571-unsplash.jpg"
+                            class="object-contain w-[306x] mb-[20px]" />
+                        <h1 class="text-[20px] mb-[8px] font-bold tracking-tight">Pellentesque habitant morbi</h1>
+                        <p class="text-[#adb5bd] mb-[16px] font-semibold text-[11.2px]">
+                            <strong class="uppercase text-[#bcac76] text-[14px] tracking-[2px] mr-[8px]">fashion and style</strong>January 16, 2019
+                        </p>
+                    </div>
+                    <div data-aos="zoom-in-up" class="element | col-start-3 col-end-4 row-start-6 row-end-8 | h-[266px]">
+                        <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347962-unsplash.jpg"
+                            class="object-contain w-[306x] mb-[20px]" />
+                        <h1 class="text-[20px] mb-[8px] font-bold tracking-tight">Pellentesque habitant morbi</h1>
+                        <p class="text-[#adb5bd] mb-[16px] font-semibold text-[11.2px]">
+                            <strong class="uppercase text-[#bcac76] text-[14px] tracking-[2px] mr-[8px]">fashion and style</strong>January 16, 2019
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section start -->
+        <section class="service-section | py-[96px] mt-[128px] | bg-[#f8f9fa]">
+            <div class="content-container ct-container | flex justify-between items-center gap-[30px]">
+                <div class="content-subelement | py-[24px] | flex justify-between items-center w-[250px]">
+                    <div class="icon-container | flex-[1_1_0%]">
+                        <i class="fa-solid fa-truck-fast fa-lg text-slate-600"></i>
+                    </div>
+                    <div class="info-container | flex-[5_5_0%] | text-[14px] tracking-tight">
+                        <h1 class="mb-1 font-bold">Free shipping & return</h1>
+                        <p class="text-[#868e96]">Free shipping over $300</p>
+                    </div>
+                </div>
+                <div class="content-subelement | py-[24px] | flex justify-between items-center w-[250px]">
+                    <div class="icon-container | flex-[1_1_0%]">
+                        <i class="fa-solid fa-hand-holding-dollar fa-lg text-slate-600"></i>
+                    </div>
+                    <div class="info-container | flex-[5_5_0%] | text-[14px] tracking-tight">
+                        <h1 class="mb-1 font-bold">Free shipping & return</h1>
+                        <p class="text-[#868e96]">Free shipping over $300</p>
+                    </div>
+                </div>
+                <div class="content-subelement | py-[24px] | flex justify-between items-center w-[250px]">
+                    <div class="icon-container | flex-[1_1_0%]">
+                        <i class="fa-solid fa-percent fa-lg text-slate-600"></i>
+                    </div>
+                    <div class="info-container | flex-[5_5_0%] | text-[14px] tracking-tight">
+                        <h1 class="mb-1 font-bold">Free shipping & return</h1>
+                        <p class="text-[#868e96]">Free shipping over $300</p>
+                    </div>
+                </div>
+                <div class="content-subelement | py-[24px] | flex justify-between items-center w-[250px]">
+                    <div class="icon-container | flex-[1_1_0%]">
+                        <i class="fa-solid fa-headset fa-lg text-slate-600"></i>
+                    </div>
+                    <div class="info-container | flex-[5_5_0%] | text-[14px] tracking-tight">
+                        <h1 class="mb-1 font-bold">Free shipping & return</h1>
+                        <p class="text-[#868e96]">Free shipping over $300</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Service Section end -->
+
+    </main>
+    <!-- Main end -->
+
+    <!-- Footer start -->
+    <footer class="footer-section | py-[96px]">
+        <div class="content-container ct-container">
+            <div class="content-subpart | p-[0_96px_0_15px] w-[475px] inline-block">
+                <h1 class="text-[16px] mb-[16px] tracking-[1px] font-bold">Be in touch</h1>
+                <p class="text-[14px] mb-[16px] text-[#868e96] font-semibold tracking-tight">
+                    Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Corporis temporibus aliquid obcaecati eius odio, nam.
+                </p>
+                <div class="form | w-full | flex items-center | border-b border-b-slate-400 duration-200 hover:border-b-black">
+                    <input type="text" class="input-field | flex-[6_6_0%] | outline-none | p-[6px_12px_6px_0]" placeholder="Your Email Address"/>
+                    <button type="submit" class="mail | flex-[1_1_0%]">
+                        <i class="fa-regular fa-envelope fa-xl text-slate-600"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="content-subpart inline-block w-[222px]">
+                <h1 class="text-[16px] mb-[16px] tracking-[1px] font-bold">Shop</h1>
+                <ul>
+                    <li underline-animated class="text-[14px] mb-2 text-[#868e96] font-semibold tracking-tight hover:font-bold hover:text-black duration-200">For Women</li>
+                    <li underline-animated class="text-[14px] mb-2 text-[#868e96] font-semibold tracking-tight hover:font-bold hover:text-black duration-200">For Men</li>
+                    <li underline-animated class="text-[14px] mb-2 text-[#868e96] font-semibold tracking-tight hover:font-bold hover:text-black duration-200">Stores</li>
+                    <li underline-animated class="text-[14px] mb-2 text-[#868e96] font-semibold tracking-tight hover:font-bold hover:text-black duration-200">Blog</li>
+                    <li underline-animated class="text-[14px] mb-2 text-[#868e96] font-semibold tracking-tight hover:font-bold hover:text-black duration-200">Shop</li>
+                </ul>
+            </div>
+            <div class="content-subpart inline-block w-[222px]">
+                <h1 class="text-[16px] mb-[16px] tracking-[1px] font-bold">Company</h1>
+                <ul>
+                    <li underline-animated class="text-[14px] mb-2 text-[#868e96] font-semibold tracking-tight hover:font-bold hover:text-black duration-200">For Women</li>
+                    <li underline-animated class="text-[14px] mb-2 text-[#868e96] font-semibold tracking-tight hover:font-bold hover:text-black duration-200">For Men</li>
+                    <li underline-animated class="text-[14px] mb-2 text-[#868e96] font-semibold tracking-tight hover:font-bold hover:text-black duration-200">Stores</li>
+                    <li underline-animated class="text-[14px] mb-2 text-[#868e96] font-semibold tracking-tight hover:font-bold hover:text-black duration-200">Blog</li>
+                    <li underline-animated class="text-[14px] mb-2 text-[#868e96] font-semibold tracking-tight hover:font-bold hover:text-black duration-200">Shop</li>
+                </ul>
+            </div>
+            <div class="content-subpart inline-block w-[100px]">
+                <h1 class="text-[16px] mb-[16px] tracking-[1px] font-bold">Account</h1>
+                <ul>
+                    <li underline-animated class="text-[14px] mb-2 text-[#868e96] font-semibold tracking-tight hover:font-bold hover:text-black duration-200">For Women</li>
+                    <li underline-animated class="text-[14px] mb-2 text-[#868e96] font-semibold tracking-tight hover:font-bold hover:text-black duration-200">For Men</li>
+                    <li underline-animated class="text-[14px] mb-2 text-[#868e96] font-semibold tracking-tight hover:font-bold hover:text-black duration-200">Stores</li>
+                    <li underline-animated class="text-[14px] mb-2 text-[#868e96] font-semibold tracking-tight hover:font-bold hover:text-black duration-200">Blog</li>
+                    <li underline-animated class="text-[14px] mb-2 text-[#868e96] font-semibold tracking-tight hover:font-bold hover:text-black duration-200">Shop</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+</script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+</script>
+<script src="https://cdn.tailwindcss.com">
+</script>
+<script src="automated.js">
+</script>
+
+</html>
