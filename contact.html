@@ -21,15 +21,15 @@
 
 <style>
     .ct-container {
-        width: 1140px;
         margin: 0 auto;
+        width: 1140px;
     }
 </style>
 
-<body style="font-family: 'Onest';">
-
+<body>
+    
     <!-- header start -->
-    <header class="p-[16px_48px] | flex justify-between items-center | border-slate-400 bg-[#E9ECEF]">
+    <header class="p-[16px_48px] | flex justify-between items-center | border-slate-400 bg-[#E9ECEF] z-10">
         <div class="header--contact | text-[14px]">
             <i class="fa-brands fa-facebook-f | cursor-pointer"></i>
             <i class="fa-brands fa-twitter | pl-2 | cursor-pointer"></i>
@@ -66,7 +66,7 @@
     <!-- header end -->
 
     <!-- navigation start -->
-    <nav class="flex items-center | p-[19.2px_48px] | transition-colors | shadow-md">
+    <nav class="flex items-center | p-[19.2px_48px] | transition-colors | transparent | z-10">
         <!-- Nav Main Panel start -->
         <div class="nav--main-panel">
             <a href="about.html" class="panel | inline-block | mr-4 py-2 | font-semibold">
@@ -138,7 +138,7 @@
         <!-- Navigation Search Panel start -->
         <div class="nav--search-panel | border-b border-b-slate-400 hover:border-b-black duration-200 | mr-[6em] ml-auto">
             <div class="content-container | w-full">
-                <input class="outline-none | p-[6px_12px_6px_16px]" type="text" name="search-input" placeholder="Search" />
+                <input class="outline-none | p-[6px_12px_6px_16px] bg-transparent" type="text" name="search-input" placeholder="Search" />
             <button>
                 <i class="fa-solid fa-magnifying-glass fa-md | px-[12px]"></i>
             </button>
@@ -167,82 +167,148 @@
 
     <main>
 
-        <!-- Heading Section start -->
-        <section class="main-heading-section">
-            <div class="content-container ct-container | py-[96px] px-[15px] | flex">
-                <div class="left-subcontainer w-[190px] relative">
-                    <span class="w-[40%] h-[1px] bg-black absolute top-[8px]"></span>
-                </div>
+        <!-- Poster Section start -->
+        <section
+            class="contact-poster | z-[-10] bg-[url('https://img.freepik.com/premium-photo/beautiful-flowers-modern-vase-set-concrete-table-with-white-wood-background-with-copy-space-soft-tone-still-life_63726-2109.jpg?w=2000')] 
+                   bg-cover bg-top bg-no-repeat h-[600px] relative top-[-80px] | flex justify-center items-center">
+            <div class="content-container ct-container | flex justify-center items-center">
+                <h1 class="font-bold text-[72px] mb-[32px] text-[#212529]">Contact</h1>
+            </div>
+        </section>
+        <!-- Poster Section end -->
 
-                <div class="right-subcontainer w-[540px]">
-                    <p class="text-[16px] text-[#bcac76] tracking-[6px] font-bold uppercase mb-[16px]">About us</p>
-                    <h1 class="font-extrabold tracking-[-1px] text-[72px] mb-[48px]">We are Varkala</h1>
-                    <p class="text-[20px] text-[#868e96] mb-[16px] font-semibold">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deserunt maiores voluptate laboriosam voluptatibus
-                        sequi ab neque quas, atque animi placeat ducimus praesentium totam veritatis et sint, in, expedita fugiat!
+        <!-- Contact Section start -->
+        <section class="contact-section pb-[96px]">
+            <div class="content-container ct-container | flex justify-between items-center gap-[30px] text-[#212529]">
+                <div class="info-subcontainer | w-[380px]">
+                    <h1 class="font-bold text-[24px] mb-[8px]">Address</h1>
+                    <p class="text-[16px] mb-[16px] | text-[#868e96] font-semibold">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cumque fugit dolorem.
+                    </p>
+                </div>
+                <div class="info-subcontainer | w-[380px]">
+                    <h1 class="font-bold text-[24px] mb-[8px]">Call Center</h1>
+                    <p class="text-[16px] mb-[16px] | text-[#868e96] font-semibold">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cumque fugit dolorem.
+                    </p>
+                </div>
+                <div class="info-subcontainer | w-[380px]">
+                    <h1 class="font-bold text-[24px] mb-[8px]">Electronic Support</h1>
+                    <p class="text-[16px] mb-[16px] | text-[#868e96] font-semibold">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta cumque fugit dolorem.
                     </p>
                 </div>
             </div>
         </section>
-        <!-- Heading Section end -->
+        <!-- Contact Section end -->
 
-        <!-- History Section start -->
-        <section class="main-heading-section">
-            <div class="content-container ct-container | py-[96px] px-[15px] | flex">
-                <div class="left-subcontainer w-[190px] relative">
-                    <span class="w-[40%] h-[1px] bg-black absolute top-[8px]"></span>
+        <!-- Embed Map Section start -->
+        <section class="map-section | bg-[#ddd] | flex">
+            <div class="map-container w-1/2">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0"
+                            marginwidth="0"
+                            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                            href="https://connectionsgame.org/">Connections Unlimited</a></div>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            width: 100%;
+                            height: 800px;
+                        }
+                
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            width: 100%;
+                            height: 800px;
+                        }
+                
+                        .gmap_iframe {
+                            height: 800px !important;
+                        }
+                    </style>
                 </div>
-
-                <div class="right-subcontainer w-[760px]">
-                    <p class="text-[16px] text-[#bcac76] tracking-[6px] font-bold uppercase mb-[16px]">The old times</p>
-                    <h1 class="font-extrabold tracking-[-1px] text-[72px] mb-[48px]">History of Varkala</h1>
+            </div>
+            
+            <div class="stores-container w-1/2 p-[96px]">
+                <div class="heading-subcontainer | mb-[48px]">
+                    <h1 class="text-[72px] text-[#868e96] font-bold">Our Stores</h1>
+                </div>
+                <div class="locations-subcontainer">
+                    <div class="element | flex justify-between items-center py-[24px] gap-[30px] | border-b border-b-gray-300 w-[642px]">
+                        <h1 class="text-[24px] font-bold pl-[12px]">New York</h1>
+                        <p class="text-[14px] font-semibold">12/35 Nizami <br /> New Heaven, 45Y</p>
+                        <p class="text-[14px] font-semibold">239-2357-22-12</p>
+                        <p class="text-[14px] font-semibold pr-[12px]">email@email.com</p>
+                    </div>
+                    <div class="element | flex justify-between items-center py-[24px] gap-[30px] | border-b border-b-gray-300 w-[642px]">
+                        <h1 class="text-[24px] font-bold pl-[12px]">London</h1>
+                        <p class="text-[14px] font-semibold">12/35 Nizami <br /> New Heaven, 45Y</p>
+                        <p class="text-[14px] font-semibold">239-2357-22-12</p>
+                        <p class="text-[14px] font-semibold pr-[12px]">email@email.com</p>
+                    </div>
+                    <div class="element | flex justify-between items-center py-[24px] gap-[30px] | border-b border-b-gray-300 w-[642px]">
+                        <h1 class="text-[24px] font-bold pl-[12px]">Paris</h1>
+                        <p class="text-[14px] font-semibold">12/35 Nizami <br /> New Heaven, 45Y</p>
+                        <p class="text-[14px] font-semibold">239-2357-22-12</p>
+                        <p class="text-[14px] font-semibold pr-[12px]">email@email.com</p>
+                    </div>
+                    <div class="element | flex justify-between items-center py-[24px] gap-[30px] | w-[642px]">
+                        <h1 class="text-[24px] font-bold pl-[12px]">Tokyo</h1>
+                        <p class="text-[14px] font-semibold">12/35 Nizami <br /> New Heaven, 45Y</p>
+                        <p class="text-[14px] font-semibold">239-2357-22-12</p>
+                        <p class="text-[14px] font-semibold pr-[12px]">email@email.com</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- History Section end -->
+        <!-- Embed Map Section end -->
 
-        <!-- First Article Section start -->
-        <section class="article-first mb-[48px]">
-            <div class="content-container ct-container | flex gap-[125px]">
-                <div class="image-container">
-                    <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/photo/raoul-ortega-2JtF6pYAOOI-unsplash.jpg" 
-                        class="object-cover w-[350px] h-[525px]"/>
+        <!-- Get-in-Touch Section start -->
+        <section class="getintouch-section | transition-all | py-[96px]">
+            <div class="content-container ct-container | flex">
+                <div class="heading-subcontainer | mr-[360px]">
+                    <h1 class="text-[88px] mb-[48px] font-bold tracking-tight w-[255px] leading-none">Get in touch</h1>
+                    <ul class="inline-flex gap-[24px]">
+                        <li><i class="fa-brands fa-facebook-f | text-[30px] text-[#bcac76] hover:text-[#9a884b] cursor-pointer"></i></li>
+                        <li><i class="fa-brands fa-twitter | text-[30px] text-[#bcac76] hover:text-[#9a884b] cursor-pointer"></i></li>
+                        <li><i class="fa-brands fa-instagram | text-[30px] text-[#bcac76] hover:text-[#9a884b] cursor-pointer"></i></li>
+                    </ul>
                 </div>
-                <div class="article-container | flex flex-col justify-center">
-                    <p class="text-[1rem] mb-[4px] text-[#868e96] tracking-[6px] uppercase font-extrabold">Humble beginnings</p>
-                    <h1 class="text-[32px] mb-[24px] font-bold">We started as little</h1>
-                    <p class="w-[540px] text-[#868e96] text-[16px] mb-[16px]">
-                        The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared
-                        with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a
-                        dream.
-                    </p>
+
+                <div class="form-subcontainer">
+                    <div class="first-row | flex justify-between items-center gap-[30px] my-[16px]">
+                        <div class="first-name-input w-[255px]">
+                            <p class="text-[16px] mb-[8px] font-bold">Your firstname *</p>
+                            <input type="text" class="border-b border-b-slate-400 focus:border-b-slate-700 focus:border-b-[2px] duration-200 outline-none w-[220px]"/>
+                        </div>
+                        <div class="surname-input w-[255px]">
+                            <p class="text-[16px] mb-[8px] font-bold">Your lastname *</p>
+                            <input type="text" class="border-b border-b-slate-400 focus:border-b-slate-700 focus:border-b-[2px] duration-200 outline-none  w-[220px]"/>
+                        </div>
+                    </div>
+                    <div class="second-row | my-[16px] w-[510px]">
+                        <p class="text-[16px] mb-[8px] font-bold">Your email *</p>
+                        <input type="text" class="border-b border-b-slate-400 focus:border-b-slate-700 focus:border-b-[2px] duration-200 outline-none w-[510px]"/>
+                    </div>
+                    <div class="textarea-row | my-[16px]">
+                        <p class="text-[16px] mb-[8px] font-bold">Your message for us *</p>
+                        <textarea class="border-b border-b-slate-400 focus:border-b-slate-700 focus:border-b-[2px] duration-200 outline-none w-[540px] h-[112px] p-[6px_12px_6px_0]"></textarea>
+                    </div>
+                    <div class="submit-row">
+                        <button type="submit">
+                            <p class="border border-[#bcac76] hover:bg-[#bcac76] text-[#bcac76] hover:text-[#212529] duration-200 font-bold tracking-[4px] uppercase text-[12.8px] p-[8.4px_12px]">Send Message</p>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- First Article Section end -->
-
-        <!-- Second Article Section start -->
-        <section class="article-second mb-[48px]">
-            <div class="content-container ct-container | flex gap-[125px]">
-                <div class="article-container | flex flex-col justify-center">
-                    <p class="text-[1rem] mb-[4px] text-[#868e96] tracking-[6px] uppercase font-extrabold">Varkala today</p>
-                    <h1 class="text-[32px] mb-[24px] font-bold">And then we grew a bit</h1>
-                    <p class="w-[540px] text-[#868e96] text-[16px] mb-[16px]">
-                        The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared
-                        with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a
-                        dream.
-                    </p>
-                </div>
-                <div class="image-container">
-                    <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/photo/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg" 
-                        class="objetc-cover w-[445px] h-[300px]"/>
-                </div>
-            </div>
-        </section>
-        <!-- Second Article Section end -->
+        <!-- Get-in-Touch Section end -->
 
         <!-- Service Section start -->
-        <section class="service-section | py-[96px] mt-[72px] | bg-[#f8f9fa]">
+        <section class="service-section | py-[96px] mt-[24px] | bg-[#f8f9fa]">
             <div class="content-container ct-container | flex justify-between items-center gap-[30px]">
                 <div class="content-subelement | py-[24px] | flex justify-between items-center w-[250px]">
                     <div class="icon-container | flex-[1_1_0%]">
@@ -285,8 +351,6 @@
         <!-- Service Section end -->
 
     </main>
-
-    
 
     <!-- Footer start -->
     <footer class="footer-section | py-[96px]">
